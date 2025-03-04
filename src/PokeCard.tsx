@@ -12,7 +12,7 @@ const PokeCard = ({ name, url }: Pokemon) => {
 
 	return (
 		<div className="poke-card" onClick={() => alert(`# ${data?.id} of 151`)}>
-			<h2>{name}</h2>
+			<h2>{name.charAt(0).toUpperCase() + name.slice(1)}</h2>
 			<img src={data?.sprites.front_default} />
 		</div>
 	)
