@@ -27,3 +27,8 @@
   padding: 0.5rem;
   width: 150px;
 }
+
+.activePaginationButton {
+  background-color: #004cff;
+  color: #fff;
+}

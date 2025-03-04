@@ -18,9 +18,12 @@ const Pagination: React.FC<PaginationProps> = ({
 			<button disabled={page === 1} onClick={() => setPage(page - 1)}>
 				Previous
 			</button>
-			<span style={{ margin: "0 10px" }}>{page}</span>
 			{Array.from({ length: totalPages }, (_, index) => (
-				<button key={index} onClick={() => setPage(index + 1)}>
+				<button
+					className={page === index + 1 ? "activePaginationButton" : ""}
+					key={index}
+					onClick={() => setPage(index + 1)}
+				>
 					{index + 1}
 				</button>
 			))}
