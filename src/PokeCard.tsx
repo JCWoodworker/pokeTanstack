@@ -11,7 +11,7 @@ const PokeCard = ({ name, url }: Pokemon) => {
 	if (isError) return <div>Error: {data?.error}</div>
 
 	return (
-		<div className="poke-card">
+		<div className="poke-card" onClick={() => alert(`# ${data?.id} of 151`)}>
 			<h2>{name}</h2>
 			<img src={data?.sprites.front_default} />
 		</div>
