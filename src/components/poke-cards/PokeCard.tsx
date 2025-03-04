@@ -1,5 +1,5 @@
 import { useQuery } from "@tanstack/react-query"
-import { Pokemon } from "./App"
+import { Pokemon } from "../../App"
 
 const PokeCard = ({ name, url }: Pokemon) => {
 	const { data, isLoading, isError } = useQuery({
