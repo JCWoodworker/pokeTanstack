@@ -31,7 +31,8 @@ function App() {
 
 	return (
 		<>
-			<h1>Testing Tanstack Query</h1>
+			<h1 className="app-title">Testing Tanstack Query</h1>
+			<hr className="divider" />
 			<Pagination
 				page={page}
 				setPage={setPage}
