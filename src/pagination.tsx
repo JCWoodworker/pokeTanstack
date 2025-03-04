@@ -14,9 +14,9 @@ const Pagination: React.FC<PaginationProps> = ({
 	const totalPages = Math.ceil(totalCount / limit)
 
 	return (
-		<div>
+		<div className="pagination-container">
 			<button disabled={page === 1} onClick={() => setPage(page - 1)}>
-				Previous
+				Prev
 			</button>
 			{Array.from({ length: totalPages }, (_, index) => (
 				<button

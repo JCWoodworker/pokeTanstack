@@ -29,6 +29,15 @@
   box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.5);
 }
 
+.pagination-container {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-evenly;
+  gap: 0.5rem;
+}
+
 .activePaginationButton {
   background-color: #004cff;
   color: #fff;
