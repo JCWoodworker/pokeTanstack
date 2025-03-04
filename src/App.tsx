@@ -2,7 +2,7 @@ import "./App.css"
 import { useState } from "react"
 import { useQuery } from "@tanstack/react-query"
 import PokeCard from "./components/poke-cards/PokeCard"
-import Pagination from "./components/pagination/pagination"
+import Pagination from "./components/pagination/Pagination"
 export interface Pokemon {
 	name: string
 	url: string
